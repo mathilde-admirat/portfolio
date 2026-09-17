@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio de Mathilde Admirat, Experience Designer — dix ans dans l'éducation, du micro-détail à la vision d'ensemble.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://VOTRE-UTILISATEUR.github.io/portfolio/">
+<meta property="og:title" content="Mathilde Admirat — Experience Designer">
+<meta property="og:description" content="Une sélection de mes projets d'Experience Design — produit, contenu, recherche.">
+<meta property="og:image" content="https://VOTRE-UTILISATEUR.github.io/portfolio/assets/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>[hidden]{display:none!important}html{-webkit-text-size-adjust:100%}</style>
+<title>Mathilde Admirat</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzBCMEEwQyIvPjxwYXRoIGQ9Ik0xNiA0IEMxNi43IDExLjMgMjAuNyAxNS4zIDI4IDE2IEMyMC43IDE2LjcgMTYuNyAyMC43IDE2IDI4IEMxNS4zIDIwLjcgMTEuMyAxNi43IDQgMTYgQzExLjMgMTUuMyAxNS4zIDExLjMgMTYgNCBaIiBmaWxsPSIjOEZFNkE2Ii8+PC9zdmc+">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+  :root{
+    color-scheme: dark;
+    --bg:#0B0A0C;
+    --bg-2:#131117;
+    --surface:#17151B;
+    --surface-2:#1E1B24;
+    --line:rgba(244,241,236,0.12);
+    --line-strong:rgba(244,241,236,0.24);
+    --ink:#F4F1EC;
+    --muted:#A29EA8;
+    --faint:#6E6A76;
+    --pink:#8FE6A6;
+    --pink-soft:#C6F2D6;
+    --pink-ink:#0B140D;
+    --mint:#8FE6A6;
+    --maxw:1240px;
+    --gutter:clamp(20px,5vw,84px);
+    --radius:14px;
+    --sp-section:clamp(68px,11vw,150px);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:clamp(1rem,0.96rem + 0.2vw,1.08rem);
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--pink);color:var(--pink-ink)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  h1,h2,h3,h4{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:500;margin:0;line-height:1.03;letter-spacing:-0.01em;text-wrap:balance}
+  p{margin:0}
+
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+  .mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+  .eyebrow{
+    font-family:"JetBrains Mono",ui-monospace,monospace;
+    font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--faint);
+    display:flex;align-items:center;gap:0.7ch;flex-wrap:wrap;
+  }
+  .eyebrow .idx{color:var(--pink)}
+  .accent{color:var(--pink);font-style:italic}
+  .hl{font-style:italic;color:var(--ink);background-image:linear-gradient(var(--pink),var(--pink));background-repeat:no-repeat;background-position:0 94%;background-size:100% 2px;padding-bottom:0.03em}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+    background:rgba(11,10,12,0.72);
+    backdrop-filter:blur(14px) saturate(1.2);
+    -webkit-backdrop-filter:blur(14px) saturate(1.2);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+  .brand{display:flex;align-items:baseline;gap:0.6ch;font-family:"Fraunces";font-weight:700;letter-spacing:-0.01em;font-size:1.02rem}
+  .brand small{font-family:"JetBrains Mono";font-weight:400;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint)}
+  .nav-links{display:flex;align-items:center;gap:1.6rem}
+  .nav-links a{font-family:"JetBrains Mono";font-size:0.74rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-right{display:flex;align-items:center;gap:0.9rem}
+  .lang{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;font-family:"JetBrains Mono";font-size:0.7rem}
+  .lang button{background:transparent;border:0;color:var(--muted);padding:0.36rem 0.7rem;cursor:pointer;letter-spacing:0.08em;transition:.18s}
+  .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+  .btn{
+    display:inline-flex;align-items:center;gap:0.6ch;cursor:pointer;
+    font-family:"JetBrains Mono";font-size:0.76rem;letter-spacing:0.06em;text-transform:uppercase;
+    padding:0.85rem 1.3rem;border-radius:999px;border:1px solid var(--line-strong);
+    background:transparent;color:var(--ink);transition:.2s;
+  }
+  .btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+  .btn.solid{background:var(--pink);color:var(--pink-ink);border-color:var(--pink)}
+  .btn.solid:hover{background:var(--pink-soft);border-color:var(--pink-soft)}
+  .btn .arw{transition:transform .2s}
+  .btn:hover .arw{transform:translate(3px,-3px)}
+  .nav .btn{padding:0.6rem 1rem}
+  .burger{display:none;background:none;border:1px solid var(--line-strong);border-radius:10px;width:42px;height:42px;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
+
+  /* ---------- HERO ---------- */
+  .hero{padding-block:clamp(56px,10vw,120px) var(--sp-section);position:relative;overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60% 55% at 82% 6%,rgba(143,230,166,0.12),transparent 60%),
+      radial-gradient(50% 40% at 8% 90%,rgba(143,230,166,0.05),transparent 60%);
+  }
+  .hero-in{position:relative;z-index:1}
+  .status{
+    display:inline-flex;align-items:center;gap:0.7ch;
+    font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:0.5rem 0.9rem;margin-bottom:clamp(28px,5vw,48px);
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(255,127,176,0.6);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,127,176,0.55)}70%{box-shadow:0 0 0 9px rgba(255,127,176,0)}100%{box-shadow:0 0 0 0 rgba(255,127,176,0)}}
+  h1.hero-title{font-size:clamp(2.7rem,8vw,6rem);font-weight:500;letter-spacing:-0.015em;line-height:1.0}
+  .hero-lead{max-width:56ch;margin-top:clamp(24px,4vw,38px);font-size:clamp(1.12rem,1rem + 0.7vw,1.5rem);line-height:1.5;color:var(--muted)}
+  .hero-lead b{color:var(--ink);font-weight:600}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:0.9rem;margin-top:clamp(32px,5vw,48px)}
+
+  /* ---------- MARQUEE ---------- */
+  .marquee{border-block:1px solid var(--line);overflow:hidden;background:var(--bg-2)}
+  .marquee-track{display:flex;gap:0;width:max-content;animation:scroll 34s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .m-item{display:flex;align-items:baseline;gap:0.8ch;padding:1.1rem 2.2rem;white-space:nowrap;border-right:1px solid var(--line)}
+  .m-item b{font-family:"Fraunces";font-weight:700;font-size:1.15rem;letter-spacing:-0.01em}
+  .m-item span{font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint)}
+  .m-item .star{color:var(--pink)}
+
+  /* ---------- SECTION SHELL ---------- */
+  section.block{padding-block:var(--sp-section);border-bottom:1px solid var(--line)}
+  .head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,72px)}
+  .head h2{font-size:clamp(2rem,5vw,3.6rem)}
+  .head .sub{color:var(--muted);max-width:40ch;font-size:1.02rem}
+
+  /* ---------- FEATURED WORK ---------- */
+  .work-list{display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
+  .case{
+    display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(20px,3vw,44px);align-items:center;
+    border:1px solid var(--line);border-radius:var(--radius);padding:clamp(16px,2vw,20px);
+    background:linear-gradient(180deg,var(--surface),var(--bg-2));
+    transition:border-color .25s,transform .25s;
+  }
+  .case:hover{border-color:var(--line-strong);transform:translateY(-3px)}
+  .case:nth-child(even){grid-template-columns:1fr 1.05fr}
+  .case:nth-child(even) .cover{order:2}
+  .cover{
+    position:relative;border-radius:10px;overflow:hidden;aspect-ratio:16/11;
+    border:1px solid var(--line);isolation:isolate;
+    display:flex;align-items:flex-end;padding:18px;
+  }
+  .cover .ghost{
+    position:absolute;right:-0.06em;top:-0.14em;z-index:0;
+    font-family:"Fraunces";font-weight:800;font-size:clamp(7rem,20vw,13rem);
+    line-height:1;color:rgba(244,241,236,0.06);letter-spacing:-0.05em;
+  }
+  .cover .cv-tag{position:relative;z-index:1;font-family:"JetBrains Mono";font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);
+    background:rgba(11,10,12,0.55);border:1px solid var(--line);border-radius:999px;padding:0.4rem 0.8rem;backdrop-filter:blur(4px)}
+  .cover.c1{background:radial-gradient(120% 120% at 80% 10%,rgba(143,230,166,0.22),transparent 55%),linear-gradient(160deg,#15211c,#0f1512)}
+  .cover.c2{background:radial-gradient(120% 120% at 15% 90%,rgba(143,230,166,0.14),transparent 55%),linear-gradient(160deg,#141d18,#0f1211)}
+  .cover.c3{background:repeating-linear-gradient(135deg,rgba(143,230,166,0.09) 0 2px,transparent 2px 16px),linear-gradient(160deg,#141d18,#0e1310)}
+  .cover.c4{background:repeating-linear-gradient(0deg,rgba(244,241,236,0.06) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(244,241,236,0.06) 0 1px,transparent 1px 22px),linear-gradient(160deg,#1a1720,#100e13)}
+  .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:0}
+  .cover:has(.cover-img){background:#0f0e13}
+  .cover:has(.cover-img)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(transparent,rgba(11,10,12,0.55));z-index:0;pointer-events:none}
+  .case-body .c-idx{font-family:"JetBrains Mono";font-size:0.74rem;letter-spacing:0.14em;color:var(--pink);margin-bottom:0.9rem}
+  .case-body h3{font-size:clamp(1.6rem,3vw,2.5rem);font-weight:500;letter-spacing:-0.01em}
+  .case-body .c-desc{color:var(--muted);margin-top:0.9rem;max-width:44ch;font-size:1.04rem}
+  .meta-row{display:flex;flex-wrap:wrap;gap:0.5rem 0.6rem;margin-top:1.4rem}
+  .chip{font-family:"JetBrains Mono";font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0.34rem 0.72rem}
+  .chip.k{color:var(--ink);border-color:var(--line-strong)}
+  .c-impact{display:flex;align-items:baseline;gap:0.6ch;margin-top:1.5rem}
+  .c-impact b{font-family:"Fraunces";font-weight:800;font-size:1.7rem;color:var(--ink);letter-spacing:-0.01em}
+  .c-impact span{font-family:"JetBrains Mono";font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint)}
+
+  /* ---------- EXPLORATIONS GRID ---------- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.6vw,20px)}
+  .tile{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);display:flex;flex-direction:column;overflow:hidden;transition:.25s}
+  .tile:hover{border-color:var(--line-strong);background:var(--surface-2);transform:translateY(-3px)}
+  .tile-img{width:100%;aspect-ratio:16/10;background:#131217;overflow:hidden}
+  .tile-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+  .tile:hover .tile-img img{filter:brightness(1.05)}
+  .tile-body{padding:1.3rem;display:flex;flex-direction:column;gap:0.55rem;flex:1}
+  .tile .t-top{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  .tile .t-cat{font-family:"JetBrains Mono";font-size:0.64rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink)}
+  .tile .t-num{font-family:"JetBrains Mono";font-size:0.64rem;color:var(--faint)}
+  .tile h3{font-size:1.4rem;font-weight:500;letter-spacing:-0.005em;margin-top:0.15rem}
+  .tile .t-org{font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.05em;color:var(--muted)}
+  .tile .t-note{color:var(--faint);font-size:0.92rem}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr;gap:clamp(30px,5vw,72px);align-items:start}
+  .about-lead{font-family:"Fraunces";font-weight:500;font-size:clamp(1.5rem,2.4vw,2.1rem);line-height:1.22;letter-spacing:-0.015em}
+  .about-body{color:var(--muted);font-size:1.12rem;max-width:64ch}
+  .about-body p+p{margin-top:1.1rem}
+  .about-body b{color:var(--ink);font-weight:600}
+  .pull{border-left:2px solid var(--pink);padding-left:1.1rem;margin-top:1.8rem;font-family:"Fraunces";font-weight:500;font-size:1.2rem;color:var(--ink);line-height:1.35;font-style:normal}
+  .pull em{font-style:italic;color:var(--pink-soft)}
+  .now{margin-top:1.8rem;display:flex;gap:0.8ch;align-items:flex-start;font-family:"JetBrains Mono";font-size:0.82rem;letter-spacing:0.02em;color:var(--muted)}
+  .now .tag{color:var(--mint)}
+
+  /* ---------- PRINCIPLES ---------- */
+  .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,20px)}
+  .prin{border-top:1px solid var(--line-strong);padding-top:1.1rem;display:flex;flex-direction:column;gap:0.6rem}
+  .prin .p-n{font-family:"JetBrains Mono";font-size:0.72rem;color:var(--pink);letter-spacing:0.1em}
+  .prin h3{font-size:1.4rem;font-weight:500;letter-spacing:-0.005em}
+  .prin p{color:var(--muted);font-size:0.96rem}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px)}
+  .skills-grid h3{font-family:"JetBrains Mono";font-weight:500;font-size:0.76rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);margin-bottom:1.3rem}
+  .tools{display:flex;flex-wrap:wrap;gap:0.6rem}
+  .tool{font-family:"JetBrains Mono";font-size:0.82rem;border:1px solid var(--line-strong);border-radius:8px;padding:0.55rem 0.85rem;color:var(--ink)}
+  .caps{display:flex;flex-direction:column}
+  .cap{display:flex;gap:0.9ch;padding:0.72rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+  .cap:last-child{border-bottom:0}
+  .cap .cn{font-family:"JetBrains Mono";font-size:0.78rem;color:var(--pink);min-width:2.4ch}
+
+  /* ---------- CONTACT ---------- */
+  .contact{padding-block:var(--sp-section)}
+  .contact h2{font-size:clamp(2.4rem,7vw,5.2rem);font-weight:500;letter-spacing:-0.015em}
+  .contact .c-sub{color:var(--muted);max-width:46ch;margin-top:1.4rem;font-size:1.15rem}
+  .contact-cta{display:flex;flex-wrap:wrap;gap:0.9rem;margin-top:2.4rem}
+  .links{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:3rem;font-family:"JetBrains Mono";font-size:0.78rem;letter-spacing:0.04em}
+  .links a{color:var(--muted);display:inline-flex;align-items:center;gap:0.5ch;border-bottom:1px solid transparent;padding-bottom:2px;transition:.2s}
+  .links a:hover{color:var(--ink);border-color:var(--pink)}
+
+  /* ---------- CASE CLICK CUE ---------- */
+  .case{cursor:pointer}
+  .case-cue{display:inline-flex;align-items:center;gap:0.5ch;margin-top:1.5rem;
+    font-family:"JetBrains Mono";font-size:0.74rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--pink)}
+  .case-cue .arw{transition:transform .2s}
+  .case:hover .case-cue .arw{transform:translateX(4px)}
+  .case:hover .cover{filter:brightness(1.08)}
+
+  /* ---------- MODAL ---------- */
+  .modal{position:fixed;inset:0;z-index:100;display:flex;justify-content:flex-end;
+    opacity:0;pointer-events:none;transition:opacity .25s}
+  .modal.open{opacity:1;pointer-events:auto}
+  .modal-scrim{position:absolute;inset:0;background:rgba(6,5,7,0.72);backdrop-filter:blur(3px)}
+  .modal-panel{position:relative;height:100%;width:min(620px,100%);overflow-y:auto;display:flex;flex-direction:column;
+    background:var(--bg-2);border-left:1px solid var(--line-strong);
+    padding:clamp(24px,4vw,44px);padding-top:calc(clamp(24px,4vw,44px) + env(safe-area-inset-top,0px));
+    transform:translateX(24px);transition:transform .3s ease}
+  .modal.open .modal-panel{transform:translateX(0)}
+  .modal-close{position:sticky;top:0;align-self:flex-end;margin:-8px -8px 4px 0;width:44px;height:44px;flex:0 0 auto;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;
+    background:var(--surface);border:1px solid var(--line-strong);border-radius:50%;color:var(--ink);font-size:1.2rem;line-height:1}
+  .modal-close:hover{background:var(--surface-2)}
+  .m-cover{border-radius:10px;aspect-ratio:16/8;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:16px;margin-bottom:1.6rem;flex:0 0 auto}
+  .m-cover .ghost{position:absolute;right:-0.06em;top:-0.16em;font-family:"Fraunces";font-weight:800;font-size:8rem;line-height:1;color:rgba(244,241,236,0.06);letter-spacing:-0.05em}
+  .m-cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:0}
+  .m-cover.has-img{aspect-ratio:auto;display:block;padding:0;align-items:stretch}
+  .m-cover.has-img .m-cover-img{position:static;width:100%;height:auto;object-fit:contain}
+  .m-eyebrow{font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem}
+  #m-title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:500;letter-spacing:-0.01em}
+  .m-meta{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.1rem}
+  .m-impact{display:flex;align-items:baseline;gap:0.6ch;margin:1.6rem 0 0.4rem}
+  .m-impact b{font-family:"Fraunces";font-weight:800;font-size:1.9rem;letter-spacing:-0.01em}
+  .m-impact span{font-family:"JetBrains Mono";font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint)}
+  .m-sections{margin-top:2rem;display:flex;flex-direction:column;gap:1.7rem}
+  .m-sec h4{font-family:"JetBrains Mono";font-weight:500;font-size:0.74rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);margin-bottom:0.6rem}
+  .m-sec p{color:var(--muted);font-size:1.04rem;line-height:1.6}
+  .m-sec a{color:var(--pink);text-decoration:underline;text-underline-offset:3px}
+  .m-sec a:hover{color:var(--pink-soft)}
+  .m-draft{margin-top:2.2rem;border-top:1px solid var(--line);padding-top:1.1rem;
+    font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.04em;color:var(--faint);line-height:1.6}
+  body.no-scroll{overflow:hidden}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding-block:2.4rem;color:var(--faint)}
+  .foot-in{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-family:"JetBrains Mono";font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase}
+  .foot-in a:hover{color:var(--ink)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:900px){
+    .about-grid{grid-template-columns:1fr}
+    .principles{grid-template-columns:repeat(2,1fr)}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .skills-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:720px){
+    .nav-links{display:none}
+    .burger{display:inline-flex}
+    .case,.case:nth-child(even){grid-template-columns:1fr}
+    .case:nth-child(even) .cover{order:0}
+    .head{align-items:flex-start}
+  }
+  @media(max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .principles{grid-template-columns:1fr}
+    .nav-right .btn{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important}
+    .marquee-track{transform:none}
+  }
+  .btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Mathilde&nbsp;Admirat <small>Experience&nbsp;Designer</small></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work" data-i18n="nav.work">Travaux</a>
+      <a href="#explorations" data-i18n="nav.explore">Explorations</a>
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#approach" data-i18n="nav.approach">Approche</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn solid" href="#contact"><span data-i18n="nav.cta">Me contacter</span></a>
+      <button class="burger" type="button" aria-label="Menu" id="burger">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <h1 class="hero-title" data-i18n="hero.title">Concevoir des écosystèmes<br>pour le <span class="hl">progrès humain</span>.</h1>
+    <p class="hero-lead" data-i18n="hero.lead">Experience Designer spécialisée en contenu, faisant le lien entre <b>détails micro</b> et <b>vision macro</b>. Dix ans dans l'éducation, dédiée à des missions porteuses de sens.</p>
+    <div class="hero-cta">
+      <a class="btn solid" href="#work"><span data-i18n="hero.cta1">Voir les projets</span> <span class="arw">↗</span></a>
+      <a class="btn" href="#about"><span data-i18n="hero.cta2">À propos de moi</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <div class="m-item"><b>10 ans</b><span data-i18n="mq.exp">d'expérience</span></div>
+    <div class="m-item"><b>4 000+</b><span data-i18n="mq.students">étudiants impactés</span></div>
+    <div class="m-item"><b>4 200+</b><span data-i18n="mq.feedback">retours analysés / mois</span></div>
+    <div class="m-item"><b>250+</b><span data-i18n="mq.terms">termes structurés</span></div>
+    <div class="m-item"><span class="star">✦</span><span data-i18n="mq.field">éducation · expérience · contenu</span></div>
+  </div>
+</div>
+
+<!-- ===================== FEATURED WORK ===================== -->
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow"><span class="idx">01</span> — <span data-i18n="work.eyebrow">Travaux sélectionnés</span></div>
+        <h2 style="margin-top:0.8rem" data-i18n="work.title">Design d'expérience</h2>
+      </div>
+      <p class="sub" data-i18n="work.sub">Quatre projets menés chez OpenClassrooms : de la recherche utilisateur à la mise en production, avec un impact mesuré.</p>
+    </div>
+
+    <div class="work-list">
+      <!-- Case 1 -->
+      <article class="case" data-case="1" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="cover c1"><img class="cover-img" src="assets/dashboard.jpg" alt="Aperçu du tableau de bord étudiant OpenClassrooms" loading="lazy"><span class="ghost">01</span><span class="cv-tag">OpenClassrooms</span></div>
+        <div class="case-body">
+          <div class="c-idx">01 / OpenClassrooms</div>
+          <h3 data-i18n="case1.title">Tableau de bord étudiant</h3>
+          <p class="c-desc" data-i18n="case1.desc">Concevoir le tableau de bord où chaque étudiant suit sa progression, de l'inscription à la certification.</p>
+          <div class="meta-row">
+            <span class="chip k" data-i18n="case1.t1">Experience Design</span>
+            <span class="chip" data-i18n="case1.t2">Nouvelle fonctionnalité</span>
+            <span class="chip" data-i18n="case1.t3">UX / UI</span>
+          </div>
+          <div class="c-impact"><b>4 000+</b><span data-i18n="case1.impact">étudiants impactés</span></div>
+        </div>
+      </article>
+      <!-- Case 2 -->
+      <article class="case" data-case="2" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="cover c2"><img class="cover-img" src="assets/training.jpg" alt="Aperçu des plans de formation OpenClassrooms" loading="lazy"><span class="ghost">02</span><span class="cv-tag">OpenClassrooms</span></div>
+        <div class="case-body">
+          <div class="c-idx">02 / OpenClassrooms</div>
+          <h3 data-i18n="case2.title">Plans de formation</h3>
+          <p class="c-desc" data-i18n="case2.desc">Repenser la façon dont les apprenants visualisent et suivent leur parcours de formation dans la durée.</p>
+          <div class="meta-row">
+            <span class="chip k" data-i18n="case2.t1">Experience Design</span>
+            <span class="chip" data-i18n="case2.t2">Itération</span>
+            <span class="chip" data-i18n="case2.t3">Design système</span>
+          </div>
+          <div class="c-impact"><b>4 000+</b><span data-i18n="case2.impact">étudiants impactés</span></div>
+        </div>
+      </article>
+      <!-- Case 3 -->
+      <article class="case" data-case="3" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="cover c3"><img class="cover-img" src="assets/feedback.jpg" alt="Aperçu du dispositif de collecte et d'analyse des retours" loading="lazy"><span class="ghost">03</span><span class="cv-tag">OpenClassrooms</span></div>
+        <div class="case-body">
+          <div class="c-idx">03 / OpenClassrooms</div>
+          <h3 data-i18n="case3.title">Collecte &amp; analyse des retours</h3>
+          <p class="c-desc" data-i18n="case3.desc">Transformer 4 200 retours mensuels en un signal clair, exploitable par toutes les équipes.</p>
+          <div class="meta-row">
+            <span class="chip k" data-i18n="case3.t1">User Research</span>
+            <span class="chip" data-i18n="case3.t2">Analyse</span>
+            <span class="chip" data-i18n="case3.t3">Discovery</span>
+          </div>
+          <div class="c-impact"><b>4 200+</b><span data-i18n="case3.impact">retours / mois</span></div>
+        </div>
+      </article>
+      <!-- Case 4 -->
+      <article class="case" data-case="4" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="cover c4"><img class="cover-img" src="assets/glossary.jpg" alt="Aperçu du glossaire d'entreprise et de son architecture" loading="lazy"><span class="ghost">04</span><span class="cv-tag">OpenClassrooms</span></div>
+        <div class="case-body">
+          <div class="c-idx">04 / OpenClassrooms</div>
+          <h3 data-i18n="case4.title">Glossaire d'entreprise</h3>
+          <p class="c-desc" data-i18n="case4.desc">Un langage commun pour toute l'entreprise : 250+ termes, une seule source de vérité.</p>
+          <div class="meta-row">
+            <span class="chip k" data-i18n="case4.t1">Content Design</span>
+            <span class="chip" data-i18n="case4.t2">Documentation</span>
+            <span class="chip" data-i18n="case4.t3">Design système</span>
+          </div>
+          <div class="c-impact"><b>250+</b><span data-i18n="case4.impact">termes · 400+ utilisateurs</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPLORATIONS ===================== -->
+<section class="block" id="explorations">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow"><span class="idx">02</span> — <span data-i18n="expl.eyebrow">Explorations &amp; parcours</span></div>
+        <h2 style="margin-top:0.8rem" data-i18n="expl.title">Au-delà du produit</h2>
+      </div>
+      <p class="sub" data-i18n="expl.sub">Learning design, politique publique, recherche en accessibilité, design d'espace… La curiosité comme fil rouge, sur dix ans de missions.</p>
+    </div>
+    <div class="grid">
+      <article class="tile" data-case="5" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="tile-img"><img src="assets/skills.jpg" alt="Guide du référentiel de compétences E2C" loading="lazy"></div>
+        <div class="tile-body">
+          <div class="t-top"><span class="t-cat" data-i18n="e2.cat">Learning Design</span><span class="t-num">05</span></div>
+          <h3 data-i18n="e2.title">Passeport de compétences</h3>
+          <span class="t-org">E2C 63</span>
+          <span class="t-note" data-i18n="e2.note">700+ bénéficiaires accompagnés.</span>
+        </div>
+      </article>
+      <article class="tile" data-case="6" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="tile-img"><img src="assets/laicite.jpg" alt="Fiche de synthèse — Laïcité, les dix messages clés" loading="lazy"></div>
+        <div class="tile-body">
+          <div class="t-top"><span class="t-cat" data-i18n="e4.cat">Learning Design</span><span class="t-num">06</span></div>
+          <h3 data-i18n="e4.title">Formation à la laïcité</h3>
+          <span class="t-org" data-i18n="e4.org">Comité interministériel</span>
+          <span class="t-note" data-i18n="e4.note">120+ bénéficiaires formés.</span>
+        </div>
+      </article>
+      <article class="tile" data-case="7" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="tile-img"><img src="assets/tattoo.jpg" alt="Le tatouage comme design identitaire" loading="lazy"></div>
+        <div class="tile-body">
+          <div class="t-top"><span class="t-cat" data-i18n="e5.cat">Recherche</span><span class="t-num">07</span></div>
+          <h3 data-i18n="e5.title">Le tatouage comme design identitaire</h3>
+          <span class="t-org">Sciences Po Lyon</span>
+          <span class="t-note" data-i18n="e5.note">Mémoire de recherche · sociologie du design.</span>
+        </div>
+      </article>
+      <article class="tile" data-case="8" role="button" tabindex="0" aria-label="Ouvrir l'étude de cas">
+        <div class="tile-img"><img src="assets/space.jpg" alt="Projets de design d'espace" loading="lazy"></div>
+        <div class="tile-body">
+          <div class="t-top"><span class="t-cat" data-i18n="e6.cat">Design d'espace</span><span class="t-num">08</span></div>
+          <h3 data-i18n="e6.title">Design d'espace</h3>
+          <span class="t-org" data-i18n="e6.org">École Boulle &amp; clients</span>
+          <span class="t-note" data-i18n="e6.note">Études de cas et projets d'espace.</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="idx">03</span> — <span data-i18n="about.eyebrow">À propos</span></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p data-i18n="about.p1">Je suis Mathilde, <b>Experience Designer</b> passionnée par toutes les disciplines du design. Dix ans dans l'éducation m'ont appris qu'exigence de conception et <b>missions porteuses de sens</b> ne s'opposent jamais.</p>
+        <p data-i18n="about.p2">L'apprentissage continu et une curiosité sans limite font de mon parcours une <b>exploration de connexions</b> : entre le produit et le contenu, entre le détail et la vision d'ensemble, entre les gens et les systèmes qu'ils habitent.</p>
+        <p data-i18n="about.p3">Je m'intéresse au <b>design centré sur le vivant</b>, à la robustesse, et — entre autres sujets — à la philosophie de Grothendieck : comprendre un problème en construisant le bon contexte autour de lui.</p>
+        <blockquote class="pull" data-i18n="about.pull">Admirat vient du latin <em>admirari</em>, « s'étonner ». C'est à peu près la définition de mon métier.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPROACH ===================== -->
+<section class="block" id="approach">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow"><span class="idx">04</span> — <span data-i18n="appr.eyebrow">Approche</span></div>
+        <h2 style="margin-top:0.8rem" data-i18n="appr.title">Ce qui guide mon travail</h2>
+      </div>
+    </div>
+    <div class="principles">
+      <div class="prin">
+        <span class="p-n">01</span>
+        <h3 data-i18n="pr1.title">Détail &amp; système</h3>
+        <p data-i18n="pr1.desc">Le microcopy et la vision produit sont le même métier, à deux échelles.</p>
+      </div>
+      <div class="prin">
+        <span class="p-n">02</span>
+        <h3 data-i18n="pr2.title">Centré sur le vivant</h3>
+        <p data-i18n="pr2.desc">Concevoir en tenant compte des personnes, mais aussi des systèmes qui les entourent.</p>
+      </div>
+      <div class="prin">
+        <span class="p-n">03</span>
+        <h3 data-i18n="pr3.title">Robustesse</h3>
+        <p data-i18n="pr3.desc">Des solutions qui tiennent dans le temps, les cas limites et le passage à l'échelle.</p>
+      </div>
+      <div class="prin">
+        <span class="p-n">04</span>
+        <h3 data-i18n="pr4.title">Curiosité &amp; connexions</h3>
+        <p data-i18n="pr4.desc">Apprendre en continu, relier les disciplines, s'étonner pour mieux concevoir.</p>
+      </div>
+    </div>
+
+    <div class="skills-grid" style="margin-top:clamp(48px,7vw,90px)">
+      <div>
+        <h3 data-i18n="skills.tools">Boîte à outils</h3>
+        <div class="tools">
+          <span class="tool">Figma</span><span class="tool">Claude</span><span class="tool">Miro</span><span class="tool">Notion</span>
+          <span class="tool">Zeroheight</span><span class="tool">Maze</span><span class="tool">Hotjar</span>
+          <span class="tool">Satismeter</span><span class="tool">User Interviews</span>
+        </div>
+      </div>
+      <div>
+        <h3 data-i18n="skills.caps">Compétences</h3>
+        <div class="caps">
+          <div class="cap"><span class="cn">01</span><span data-i18n="cap1">Design d'expérience, spécialité contenu</span></div>
+          <div class="cap"><span class="cn">02</span><span data-i18n="cap6">Design augmenté par l'IA — Claude, exploration &amp; prototypage</span></div>
+          <div class="cap"><span class="cn">03</span><span data-i18n="cap2">User research — entretiens, sondages, focus groups, A/B testing</span></div>
+          <div class="cap"><span class="cn">04</span><span data-i18n="cap3">Collaboration cross-functional — PM, EM, Devs</span></div>
+          <div class="cap"><span class="cn">05</span><span data-i18n="cap4">Design systems</span></div>
+          <div class="cap"><span class="cn">06</span><span data-i18n="cap5">Learning design &amp; ingénierie pédagogique</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:1.6rem"><span class="idx">05</span> — <span data-i18n="contact.eyebrow">Contact</span></div>
+    <h2 data-i18n="contact.title">Construisons quelque chose <span class="accent">ensemble</span>.</h2>
+    <p class="c-sub" data-i18n="contact.sub">Ouverte à des postes de designer — content, research, experience — et à des missions freelance. Écrivons-nous.</p>
+    <div class="contact-cta">
+      <a class="btn solid" href="https://www.linkedin.com/in/mathilde-admirat" target="_blank" rel="noopener"><span data-i18n="contact.email">Contacter via LinkedIn</span> <span class="arw">↗</span></a>
+    </div>
+    <div class="links">
+      <a href="mailto:mathildeadmirat@hotmail.com">✉ mathildeadmirat@hotmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+    <div class="m-cover" id="m-cover"><img class="m-cover-img" id="m-cover-img" alt="" hidden><span class="ghost" id="m-ghost">01</span></div>
+    <div class="m-eyebrow" id="m-eyebrow">OpenClassrooms</div>
+    <h3 id="m-title">—</h3>
+    <div class="m-meta" id="m-meta"></div>
+    <div class="m-impact" id="m-impact"><b id="m-impact-n">—</b><span id="m-impact-l">—</span></div>
+    <div class="m-sections" id="m-sections"></div>
+    <p class="m-draft" id="m-draft">—</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© 2026 Mathilde Admirat</span>
+    <span data-i18n="foot.made">Conçu avec soin · France</span>
+    <a href="#top" data-i18n="foot.top">Haut de page ↑</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var EN = {
+    "nav.work":"Work","nav.explore":"Explorations","nav.about":"About","nav.approach":"Approach","nav.contact":"Contact","nav.cta":"Get in touch",
+    "hero.status":"Open to opportunities · Freelance content design",
+    "hero.title":"Designing ecosystems<br>for <span class=\"hl\">human progress</span>.",
+    "hero.lead":"Content-focused Experience Designer bridging <b>micro details</b> and <b>macro vision</b>. Ten years in education, dedicated to meaningful missions.",
+    "hero.cta1":"View work","hero.cta2":"About me",
+    "mq.exp":"years of experience","mq.students":"students impacted","mq.feedback":"feedback reports / month","mq.terms":"terms structured","mq.field":"education · experience · content",
+    "work.eyebrow":"Selected work","work.title":"Experience Design","work.sub":"Four projects shipped at OpenClassrooms — from user research to production, with measured impact.",
+    "case1.title":"Student Dashboard","case1.desc":"Designing the home base where every student tracks their journey, from enrolment to graduation.","case1.t1":"Experience Design","case1.t2":"New feature","case1.t3":"UX / UI","case1.impact":"students impacted",
+    "case2.title":"Training Plans","case2.desc":"Rethinking how learners visualise and follow their training path over time.","case2.t1":"Experience Design","case2.t2":"Iteration","case2.t3":"Design system","case2.impact":"students impacted",
+    "case3.title":"Feedback Collect &amp; Analysis","case3.desc":"Turning 4,200 monthly feedback reports into a clear signal all the teams can act on.","case3.t1":"User Research","case3.t2":"Analysis","case3.t3":"Discovery","case3.impact":"reports / month",
+    "case4.title":"Company Glossary","case4.desc":"A shared language for the whole company: 250+ terms, one source of truth.","case4.t1":"Content Design","case4.t2":"Documentation","case4.t3":"Design system","case4.impact":"terms · 400+ users",
+    "expl.eyebrow":"Explorations &amp; background","expl.title":"Beyond the product","expl.sub":"Learning design, public policy, accessibility research, spatial design… Curiosity as a through-line, across ten years of missions.",
+    "e1.cat":"Accessibility","e1.title":"Sign Language App","e1.note":"Learning design for young deaf children.",
+    "e2.cat":"Learning Design","e2.title":"Skills Passport","e2.note":"700+ beneficiaries supported.",
+    "e3.cat":"Data Analysis","e3.title":"Feature Analysis","e3.note":"Data-driven product decisions.",
+    "e4.cat":"Learning Design","e4.title":"Secularism Training","e4.org":"Interministerial committee","e4.note":"120+ beneficiaries trained.",
+    "e5.cat":"Research","e5.title":"Tattoo as Identity Design","e5.note":"MA research thesis · sociology of design.",
+    "e6.cat":"Spatial Design","e6.title":"Space Design","e6.org":"École Boulle &amp; clients","e6.note":"Spatial case studies and projects.",
+    "about.eyebrow":"About",
+    "about.lead":"I care as much about a single word of microcopy as about the system it lives in.",
+    "about.p1":"I'm Mathilde, an <b>Experience Designer</b> passionate about every design discipline. Ten years in education have taught me that rigorous craft and <b>meaningful missions</b> are never a trade-off.",
+    "about.p2":"Continuous learning and boundless curiosity make my career a <b>rich exploration of connections</b>: between product and content, between detail and the bigger picture, between people and the systems they inhabit.",
+    "about.p3":"I'm drawn to <b>life-centered design</b>, to robustness, and — among other things — to Grothendieck's philosophy: understanding a problem by building the right context around it.",
+    "about.pull":"Admirat comes from the Latin <em>admirari</em>, “to wonder.” That's more or less my job description.",
+    "about.now":"Designing at OpenClassrooms while completing a UX Designer certification (European level 6).",
+    "appr.eyebrow":"Approach","appr.title":"What guides my work",
+    "pr1.title":"Detail &amp; system","pr1.desc":"Microcopy and product vision are the same craft, at two different scales.",
+    "pr2.title":"Life-centered","pr2.desc":"Designing for people, but also for the living systems that surround them.",
+    "pr3.title":"Robustness","pr3.desc":"Solutions that hold up over time, through edge cases and at scale.",
+    "pr4.title":"Curiosity &amp; connections","pr4.desc":"Learning continuously, linking disciplines, staying open to wonder.",
+    "skills.tools":"Toolbox","skills.caps":"Capabilities",
+    "cap1":"Experience design, content specialty","cap2":"User research — interviews, surveys, focus groups, A/B testing","cap3":"Cross-functional collaboration — PM, EM, Devs","cap4":"Design systems","cap5":"Learning design &amp; instructional engineering","cap6":"AI-augmented design — Claude, exploration &amp; prototyping",
+    "contact.eyebrow":"Contact","contact.title":"Let's create something <span class=\"accent\">together</span>.","contact.sub":"Open to design roles — content, research, experience — and freelance work. Let's talk.",
+    "contact.email":"Contact on LinkedIn",
+    "foot.made":"Crafted with care · France","foot.top":"Back to top ↑"
+  };
+  var currentLang = 'fr';
+  var UI = { cue:{fr:"Lire l'étude de cas", en:"Read case study"} };
+  var nodes = document.querySelectorAll('[data-i18n]');
+  var FR = {};
+  nodes.forEach(function(n){ FR[n.getAttribute('data-i18n')] = n.innerHTML; });
+
+  function apply(lang){
+    currentLang = lang;
+    var dict = (lang === 'en') ? EN : FR;
+    nodes.forEach(function(n){
+      var k = n.getAttribute('data-i18n');
+      if (dict[k] !== undefined) n.innerHTML = dict[k];
+    });
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.lang button').forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+    });
+    document.querySelectorAll('.case-cue .txt').forEach(function(t){ t.textContent = UI.cue[lang]; });
+    if (modalEl && modalEl.classList.contains('open') && openCaseId) renderCase(openCaseId);
+    try { localStorage.setItem('ma_lang', lang); } catch(e){}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); });
+  });
+
+  var saved = 'fr';
+  try { var s = localStorage.getItem('ma_lang'); if (s === 'en' || s === 'fr') saved = s; } catch(e){}
+  if (saved === 'en') apply('en');
+
+  // Mobile menu: reveal nav links inline
+  var burger = document.getElementById('burger');
+  if (burger){
+    burger.addEventListener('click', function(){
+      var nl = document.querySelector('.nav-links');
+      if (!nl) return;
+      var open = nl.style.display === 'flex';
+      nl.style.display = open ? '' : 'flex';
+      nl.style.position = 'absolute';
+      nl.style.top = '64px'; nl.style.left = '0'; nl.style.right = '0';
+      nl.style.flexDirection = 'column';
+      nl.style.gap = '0';
+      nl.style.background = 'var(--bg)';
+      nl.style.borderBottom = '1px solid var(--line)';
+      nl.style.padding = open ? '' : '0.4rem 0';
+      nl.querySelectorAll('a').forEach(function(a){ a.style.padding = '0.9rem var(--gutter)'; });
+    });
+  }
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if (window.innerWidth <= 720){ var nl=document.querySelector('.nav-links'); if(nl) nl.style.display=''; }
+    });
+  });
+
+  /* ---------- CASE STUDIES / MODAL ---------- */
+  var BG = {
+    c1:'radial-gradient(120% 120% at 80% 10%,rgba(143,230,166,0.22),transparent 55%),linear-gradient(160deg,#15211c,#0f1512)',
+    c2:'radial-gradient(120% 120% at 15% 90%,rgba(143,230,166,0.14),transparent 55%),linear-gradient(160deg,#141d18,#0f1211)',
+    c3:'repeating-linear-gradient(135deg,rgba(143,230,166,0.09) 0 2px,transparent 2px 16px),linear-gradient(160deg,#141d18,#0e1310)',
+    c4:'repeating-linear-gradient(0deg,rgba(244,241,236,0.06) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(244,241,236,0.06) 0 1px,transparent 1px 22px),linear-gradient(160deg,#1a1720,#100e13)'
+  };
+  var CASES = {
+    '1':{ghost:'01',cover:'c1',img:'assets/dashboard.jpg',impactN:'4 000+',impactNen:'4,000+',
+      fr:{title:'Tableau de bord étudiant',meta:['Experience Design','Nouvelle fonctionnalité','UX / UI'],impactL:'étudiants impactés',
+        secs:[['Contexte','Les étudiants n’avaient pas de point d’ancrage unique pour suivre leur formation. Progression, prochaines étapes et échéances étaient dispersées, générant confusion et sollicitations au support.'],['Mon rôle','Experience Designer sur la fonctionnalité, de la discovery à la mise en production, en binôme avec le PM et les développeurs de la squad.'],['Démarche','Entretiens et analyse des retours pour prioriser les besoins, cartographie du parcours étudiant, maquettes et prototypes testés, puis itérations avec la squad jusqu’à la livraison.'],['Résultat','Un tableau de bord qui centralise la progression de chaque étudiant, de l’inscription à la certification, et réduit la charge de recherche d’information.']]},
+      en:{title:'Student Dashboard',meta:['Experience Design','New feature','UX / UI'],impactL:'students impacted',
+        secs:[['Context','Students had no single home base to track their training. Progress, next steps and deadlines were scattered, creating confusion and support load.'],['My role','Experience Designer on the feature, from discovery to production, paired with the squad’s PM and developers.'],['Approach','Interviews and feedback analysis to prioritise needs, student-journey mapping, tested mockups and prototypes, then iterations with the squad through to release.'],['Outcome','A dashboard that centralises each student’s progress, from enrolment to graduation, and cuts the effort of finding information.']]}},
+    '2':{ghost:'02',cover:'c2',img:'assets/training.jpg',impactN:'4 000+',impactNen:'4,000+',
+      fr:{title:'Plans de formation',meta:['Experience Design','Itération','Design système'],impactL:'étudiants impactés',
+        secs:[['Contexte','Le parcours de formation était difficile à se représenter dans le temps : les apprenants peinaient à savoir où ils en étaient et ce qui les attendait.'],['Mon rôle','Experience Designer en charge de l’itération, en lien étroit avec la recherche utilisateur et le design system.'],['Démarche','Analyse de l’existant et des points de friction, refonte de la visualisation du parcours, tests et ajustements successifs avec les équipes.'],['Résultat','Une lecture plus claire et continue du parcours de formation, cohérente et réutilisable à l’échelle du produit.']]},
+      en:{title:'Training Plans',meta:['Experience Design','Iteration','Design system'],impactL:'students impacted',
+        secs:[['Context','The training path was hard to picture over time: learners struggled to know where they stood and what came next.'],['My role','Experience Designer leading the iteration, working closely with user research and the design system.'],['Approach','Reviewed the existing flow and friction points, redesigned the path visualisation, tested and refined it with the teams.'],['Outcome','A clearer, continuous reading of the training path, consistent and reusable across the product.']]}},
+    '3':{ghost:'03',cover:'c3',img:'assets/feedback.jpg',impactN:'4 200+',impactNen:'4,200+',
+      fr:{title:'Collecte & analyse des retours',meta:['User Research','Analyse','Discovery'],impactL:'retours / mois',
+        secs:[['Contexte','Chaque mois, 4 200+ retours étudiants étaient collectés mais restaient sous-exploités, faute d’un traitement structuré.'],['Mon rôle','Pilotage de la recherche : conception du dispositif de collecte et de la méthode d’analyse.'],['Démarche','Refonte du questionnaire, structuration et catégorisation des verbatims, synthèse en signaux actionnables partagés à toutes les équipes.'],['Résultat','Un flux de feedback lisible et exploitable par toute l’équipe pour prioriser les chantiers produit.']]},
+      en:{title:'Feedback Collect & Analysis',meta:['User Research','Analysis','Discovery'],impactL:'reports / month',
+        secs:[['Context','Every month, 4,200+ student feedback reports were collected but under-used, for lack of a structured process.'],['My role','Leading the research: designing the collection setup and the analysis method.'],['Approach','Reworked the survey, structured and categorised the verbatims, distilled them into actionable signals shared with all the teams.'],['Outcome','A feedback stream the whole team can read and act on to prioritise product work.']]}},
+    '4':{ghost:'04',cover:'c4',img:'assets/glossary.jpg',impactN:'250+',impactNen:'250+',
+      fr:{title:'Glossaire d’entreprise',meta:['Content Design','Documentation','Design système'],impactL:'termes · 400+ utilisateurs',
+        secs:[['Contexte','Le vocabulaire interne variait d’une équipe à l’autre, source d’incompréhensions et d’incohérences dans le produit comme dans la communication.'],['Mon rôle','Content Designer : conception et structuration du glossaire, définition des règles éditoriales et de la gouvernance.'],['Démarche','Recensement des termes, rédaction et validation des définitions, mise en place d’une source de vérité unique et partagée.'],['Résultat','250+ termes structurés, adoptés par 400+ utilisateurs — un langage commun à l’échelle de l’entreprise.']]},
+      en:{title:'Company Glossary',meta:['Content Design','Documentation','Design system'],impactL:'terms · 400+ users',
+        secs:[['Context','Internal vocabulary varied from team to team, causing misunderstandings and inconsistencies in both the product and communication.'],['My role','Content Designer: designing and structuring the glossary, defining the editorial rules and governance.'],['Approach','Inventoried the terms, wrote and validated the definitions, set up a single shared source of truth.'],['Outcome','250+ structured terms, adopted by 400+ users — a shared language across the whole company.']]}},
+    '5':{ghost:'05',cover:'c2',img:'assets/skills.jpg',impactN:'700+',impactNen:'700+',
+      fr:{title:'Passeport de compétences',meta:['Learning Design','UX','Accessibilité cognitive'],org:'E2C 63',impactL:'bénéficiaires',
+        secs:[['Contexte','À l’École de la Deuxième Chance (E2C), de jeunes adultes en réinsertion peinent à identifier et valoriser leurs compétences ; les évaluations classiques sont vécues comme intimidantes après des échecs scolaires. L’objectif : un passeport qui transforme les soft skills invisibles en atouts professionnels et reconstruit la confiance.'],['Mon rôle','Learning designer : recherche ethnographique, principes de conception et design de l’outil, pensé pour l’étudiant comme pour l’employeur.'],['Démarche','Les entretiens ont révélé que le vrai frein était le manque de légitimité, pas de compétences. J’ai misé sur un langage clair, des icônes intuitives, une stratégie de « petites victoires » célébrées, et un « traducteur de compétences » qui transforme les expériences du quotidien en mots-clés professionnels.'],['Résultat','Plus de participation aux ateliers, et des étudiants qui présentent leur passeport en entretien comme un « bouclier visuel » et un point de départ de conversation.']]},
+      en:{title:'Skills Passport',meta:['Learning Design','UX','Cognitive accessibility'],org:'E2C 63',impactL:'beneficiaries',
+        secs:[['Context','At the "École de la Deuxième Chance" (E2C), young adults in reintegration struggle to identify and value their skills; traditional assessments feel intimidating after past educational failures. The goal: a passport that turns invisible soft skills into professional assets and rebuilds confidence.'],['My role','Learning designer: ethnographic research, design principles, and the tool itself — built for both the student and the employer.'],['Approach','Interviews revealed the real barrier was self-legitimacy, not skills. I leaned on plain language, intuitive icons, a celebrated "small wins" strategy, and a "Skill Translator" turning everyday experiences into professional keywords.'],['Outcome','Higher participation in workshops, and students presenting their passport in interviews as a "visual shield" and conversation starter.']]}},
+    '6':{ghost:'06',cover:'c3',img:'assets/laicite.jpg',impactN:'120+',impactNen:'120+',
+      fr:{title:'Formation à la laïcité',meta:['Learning Design','Ingénierie pédagogique','Storytelling'],org:'Comité interministériel',impactL:'personnes formées',
+        secs:[['Contexte','Concevoir une formation « Valeurs de la République & Laïcité » pour de jeunes adultes en réinsertion, dans le cadre de l’initiative nationale. Ces sujets, perçus comme abstraits ou moralisateurs, provoquent souvent désengagement ou réactions défensives.'],['Mon rôle','Ingénierie pédagogique de bout en bout.'],['Démarche','Des modules interactifs bâtis sur un va-et-vient entre questions et apports théoriques, avec storytelling et embranchements situationnels — dépasser le « bon/mauvais » pour comprendre le « pourquoi » des règles sociales.'],['Résultat','Moins de crispations sur des sujets sensibles et un dialogue constructif entre apprenants et travailleurs sociaux.']]},
+      en:{title:'Secularism Training',meta:['Learning Design','Instructional design','Storytelling'],org:'Interministerial committee',impactL:'people trained',
+        secs:[['Context','Designing a "Values of the Republic & Secularism" program for young adults in reintegration, within the national initiative. Perceived as abstract or moralizing, these topics often trigger disengagement or defensive reactions.'],['My role','End-to-end instructional design.'],['Approach','Interactive modules built on a back-and-forth between questions and theory, with storytelling and situational branching — moving beyond "right or wrong" toward the "why" behind social rules.'],['Outcome','Reduced friction on sensitive topics and constructive dialogue between learners and social workers.']]}},
+    '7':{ghost:'07',cover:'c4',img:'assets/tattoo.jpg',
+      fr:{title:'Le tatouage comme design identitaire',meta:['Recherche','Sociologie','Entretiens'],org:'Sciences Po Lyon',
+        secs:[['Contexte','Mémoire de recherche (MA sociologie, Sciences Po Lyon) sur les ressorts sociologiques et psychologiques du tatouage : comment on se réapproprie l’image de soi par la modification corporelle permanente.'],['Mon rôle','Chercheuse — recherche qualitative de bout en bout.'],['Démarche','Entretiens semi-directifs, recherche documentaire, analyse thématique et des interactions, neutralité axiologique. Le tatouage analysé comme une « interface humaine » entre le soi intime et le regard public.'],['Résultat','Une expertise en entretien ethnographique et analyse thématique que j’applique aujourd’hui aux motivations des utilisateurs. Travail évoqué sur <a href="https://drive.google.com/file/d/1LvjurD0EJx6NL59JH_hTU63xM8sltHMn/view" target="_blank" rel="noopener">France Info pendant le Mondial du Tatouage</a>.']]},
+      en:{title:'Tattoo as Identity Design',meta:['Research','Sociology','Interviews'],org:'Sciences Po Lyon',
+        secs:[['Context','MA sociology research thesis (Sciences Po Lyon) on the sociological and psychological drivers of tattooing: how people reclaim agency over their self-image through permanent body modification.'],['My role','Researcher — end-to-end qualitative research.'],['Approach','Semi-structured interviews, secondary research, thematic and interaction analysis, axiological neutrality. The tattoo analysed as a "human interface" between the private self and the public gaze.'],['Outcome','Expertise in ethnographic interviewing and thematic analysis that I now apply to user motivations. Featured in a <a href="https://drive.google.com/file/d/1LvjurD0EJx6NL59JH_hTU63xM8sltHMn/view" target="_blank" rel="noopener">France Info interview during the Paris Tattoo Convention</a>.']]}},
+    '8':{ghost:'08',cover:'c1',img:'assets/space.jpg',
+      fr:{title:'Design d’espace',meta:['Design d’espace','Scénographie','Design thinking'],org:'École Boulle & clients',
+        secs:[['Contexte','Études de cas et projets d’aménagement (École Boulle & clients). Le design d’espace m’a appris que l’expérience commence bien avant le premier clic.'],['Mon rôle','Conception spatiale : plans, élévations, calepinage.'],['Démarche','Transformer des contraintes structurelles strictes en solutions fluides ; analyse des besoins, planches d’ambiance, équilibre entre esthétique et utilité. Outils : Photoshop, AutoCAD, 3ds Max.'],['Résultat','Une rigueur systémique que je transpose aujourd’hui à la conception de produits — l’interface comme espace vivant où clarté et ergonomie fondent l’engagement.']]},
+      en:{title:'Space Design',meta:['Spatial design','Scenography','Design thinking'],org:'École Boulle & clients',
+        secs:[['Context','Case studies and spatial projects (École Boulle & clients). Spatial design taught me that experience begins long before the first click.'],['My role','Spatial design: floor plans, elevations, tiling layouts.'],['Approach','Turning strict structural constraints into seamless solutions; needs analysis, mood boards, balancing aesthetics and utility. Tools: Photoshop, AutoCAD, 3ds Max.'],['Outcome','A systemic rigor I now translate into product design — the interface as a living space where clarity and ergonomics ground engagement.']]}}
+  };
+
+  var modalEl = document.getElementById('modal');
+  var openCaseId = null;
+  var lastTrigger = null;
+  var mTitle=document.getElementById('m-title'),mEyebrow=document.getElementById('m-eyebrow'),
+      mMeta=document.getElementById('m-meta'),mImpN=document.getElementById('m-impact-n'),
+      mImpL=document.getElementById('m-impact-l'),mSecs=document.getElementById('m-sections'),
+      mCover=document.getElementById('m-cover'),mGhost=document.getElementById('m-ghost'),
+      mCoverImg=document.getElementById('m-cover-img'),
+      mImpact=document.getElementById('m-impact'),
+      mDraft=document.getElementById('m-draft');
+  if (mDraft) mDraft.hidden = true;
+
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+
+  function renderCase(id){
+    var c = CASES[id]; if(!c) return;
+    var L = c[currentLang] || c.fr;
+    mEyebrow.textContent = L.org || 'OpenClassrooms';
+    mCover.style.background = BG[c.cover];
+    mGhost.textContent = c.ghost;
+    if(c.img){ mCoverImg.src=c.img; mCoverImg.hidden=false; mGhost.hidden=true; mCover.classList.add('has-img'); }
+    else { mCoverImg.hidden=true; mCoverImg.removeAttribute('src'); mGhost.hidden=false; mCover.classList.remove('has-img'); }
+    mTitle.textContent = L.title;
+    if(c.impactN){ mImpact.hidden=false; mImpN.textContent=(currentLang==='en')?c.impactNen:c.impactN; mImpL.textContent=L.impactL; }
+    else { mImpact.hidden=true; }
+    mMeta.innerHTML = L.meta.map(function(m,i){ return '<span class="chip'+(i===0?' k':'')+'">'+esc(m)+'</span>'; }).join('');
+    mSecs.innerHTML = L.secs.map(function(s){ return '<div class="m-sec"><h4>'+esc(s[0])+'</h4><p>'+s[1]+'</p></div>'; }).join('');
+  }
+
+  function openModal(id, trigger){
+    openCaseId = id; lastTrigger = trigger || null;
+    renderCase(id);
+    modalEl.classList.add('open');
+    modalEl.setAttribute('aria-hidden','false');
+    document.body.classList.add('no-scroll');
+    var cbtn = modalEl.querySelector('.modal-close'); if(cbtn) cbtn.focus();
+  }
+  function closeModal(){
+    modalEl.classList.remove('open');
+    modalEl.setAttribute('aria-hidden','true');
+    document.body.classList.remove('no-scroll');
+    openCaseId = null;
+    if (lastTrigger && lastTrigger.focus) lastTrigger.focus();
+  }
+
+  // Inject cues + wire clicks
+  document.querySelectorAll('.case, .tile[data-case]').forEach(function(card){
+    var body = card.querySelector('.case-body') || card.querySelector('.tile-body');
+    if (body){
+      var cue = document.createElement('div');
+      cue.className = 'case-cue';
+      cue.innerHTML = '<span class="txt">'+UI.cue[currentLang]+'</span> <span class="arw" aria-hidden="true">→</span>';
+      body.appendChild(cue);
+    }
+    card.addEventListener('click', function(){ openModal(card.getAttribute('data-case'), card); });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openModal(card.getAttribute('data-case'), card); }
+    });
+  });
+
+  if (modalEl){
+    modalEl.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click', closeModal); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && modalEl.classList.contains('open')) closeModal(); });
+  }
+})();
+</script>
+
+</body>
+</html>
